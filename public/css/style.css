@@ -1,0 +1,397 @@
+
+body {
+    background: black;
+    color: black;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* NAV */
+
+
+.navbar {
+    letter-spacing: 0.15rem;
+}
+
+.navbar li {
+    padding: 0 4%;
+}
+
+
+
+/* HEADER */
+
+.header {
+    background: url("../../public/images/computer.jpg") fixed 55% 80%;
+    background-size: cover;
+    height: 100vh;
+    min-height: 350px;
+    margin: 0;
+    border-top: 1px solid white;
+    display: none;
+    font-family: "Kodchasan";
+    /* font-weight: bold; */
+}
+
+
+.button:focus {
+    outline: none;
+}
+
+.header h1 {
+    display: none;
+}
+.header i {
+    padding-left: 8px;
+    width: 20px;
+}
+
+
+
+/* ABOUT */
+.about {
+    background: rgb(239, 239, 239);
+    background-size: cover;
+    padding: 6% 0;
+    overflow: hidden;
+}
+
+.about .info {
+    padding: 50px 10px;
+}
+
+.about .col-md-2{
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.about .icons {
+    margin: 2% 0;
+}
+
+.about i {
+    color: rgb(8, 199, 183);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* PORTFOLIO */
+.portfolio {
+    background: white;
+    border-top: 1px solid rgb(239, 239, 239);
+    padding: 0;
+}
+
+.portfolio  .container {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+}
+
+.portfolio .col-md-4 {
+    padding: 0 !important;
+
+}
+.portfolio img {
+    height: 20vh;
+    display: block;
+    margin: 30% auto;
+}
+.portfolio p {
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    display: none;
+}
+
+.square {
+    padding: 25%;
+    overflow: hidden;
+}
+
+/* CONTACT */
+
+.contact {
+    background: url("../images/white.jpg") center;
+    background-size: cover;
+    padding: 5% 0 0 0;
+    overflow: hidden;
+
+}
+.contact form {
+    background: rgba(52, 58, 64, 0.1);
+    color: black;
+    padding: 5% 8%;
+    border-radius: 10px;
+}
+.heading {
+    padding: 0;
+    background: white;
+
+}
+
+form p {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+}
+.contact .row {
+    padding: 6% 0 12% 0;
+}
+.contact button {
+    background: rgba(8, 199, 183, 0.5);
+}
+
+.contact button:hover {
+    background: rgba(8, 199, 183, 0.8);
+}
+
+.triangle {
+    width: 100%; 
+    height: 0; 
+    border-left: 50vw solid #343a40;
+    border-right: 55vw solid #343a40; 
+    border-top: 80px solid transparent; 
+    padding: 0;
+   }
+
+
+/* FOOTER */
+.footer {
+    background: #343a40;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer .icons {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(8, 199, 183);
+    padding: 6% 0;
+}
+
+.footer a {
+    color: rgb(8, 199, 183);
+}
+
+.footer a:hover {
+    color: rgba(8, 199, 183, 0.6);
+    font-size: 2.3rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s; 
+}
+
+
+.footer table {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.footer td {
+    width: 33%;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+    
+    .header .col-sm-12 {
+        color: white;
+        font-size: 1.0rem;
+        padding: 20vh 0;
+        letter-spacing: 0.7rem;   
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .header h1 {
+        font-size: 2.2rem;
+        padding-bottom: 20vh;
+    }
+    .button {
+        font-size: 0.9rem;
+        border-radius: 10px;
+        border: white 2px solid;
+        padding: 10px 20px;
+        background: transparent;
+        color: white;
+        outline: none;
+        transition: background 0.3s ease,
+                    border 0.3s ease;
+        display: none;
+        letter-spacing: 0;
+        
+    }
+    .about .bio {
+        padding: 5% 7%;
+    }
+
+.about img {
+    width: 75%;
+    margin: 0 12.5%;
+    border-radius: 100px;
+    padding: 20px 5px;
+}
+.heading {
+    /* background: url("../images/head.jpg") center; */
+    /* background-size: cover; */
+    background: white;
+    padding: 3% 1%;
+}
+.heading h1{
+    text-align: center;
+    padding: 15px;
+    margin: 2% 25%;
+    width: 50%;
+    border-bottom: black solid 4px;
+}
+.icons h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 1.6rem;
+}
+.about .col-md-2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.about h3 {
+    font-size: 1.4rem;
+}
+.about p {
+    font-size: 1rem;
+}
+
+.triangle {
+    width: 100%; 
+    height: 0; 
+    border-left: 50vw solid #343a40;
+    border-right: 50vw solid #343a40; 
+    border-top: 30px solid transparent; 
+    padding: 0;
+   }
+
+   .footer p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(239, 239, 239);
+    letter-spacing: 0.5rem;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 769px){
+
+    .header .col-sm-12 {
+        color: white;
+        font-size: 3.5rem;
+        padding: 50vh 0;
+        letter-spacing: 0.7rem;   
+        text-align: center;
+        font-weight: bold;
+    }
+    .button {
+        font-size: 1.3rem;
+        border-radius: 10px;
+        border: white 2px solid;
+        padding: 10px 20px;
+        background: transparent;
+        color: white;
+        outline: none;
+        transition: background 0.3s ease,
+                    border 0.3s ease;
+        display: none;
+        letter-spacing: 0;
+    }
+
+/* ABOUT */
+
+.about .bio {
+    padding: 5% 0;
+}
+
+.about img {
+    width: 75%;
+    margin: 0 12.5%;
+    border-radius: 40px;
+    padding: 0;
+}
+.heading {
+    /* background: url("../images/head.jpg") center; */
+    /* background-size: cover; */
+    padding: 3% 1%;
+    background: white;
+}
+.heading h1 {
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0% 25%;
+    width: 50%;
+    letter-spacing: 2.0rem;
+}
+.icons h2 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+.about .col-md-2{
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.triangle {
+    width: 100%; 
+    height: 0; 
+    border-left: 50vw solid #343a40;
+    border-right: 50vw solid #343a40; 
+    border-top: 70px solid transparent; 
+    padding: 0;
+   }
+
+   .footer p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(239, 239, 239);
+    letter-spacing: 0.5rem;
+}
+}

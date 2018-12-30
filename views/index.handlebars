@@ -59,18 +59,21 @@
                     <div class="col-md-2">
 
                     </div>
-                    <div class="col-md-4">
-                            <img src="../public/images/me.jpg" alt="Tara">
+                    <div class="col-md-3 block">
+                        <div class="div">
+                            <img class="images" src="../public/images/me.jpg" alt="Tara">
+
                         </div>
-                        <div class="col-md-4 info">
-                            <p>My name is Tara Downes, and I am a Full-stack Web developer from Chicago, IL. I have a passion for building dynamic web applications with a simple and clear user interface. I have been coding for almost a year and have learned my skills through online classes and self-directed study.  </p>
-                        <table>
+                        </div>
+                        <div class="col-md-5 info">
+                            <p>My name is Tara Downes, and I am a full-stack web developer from Chicago, IL. I have a passion for building dynamic web applications with a simple and clear user interface. I strive to provide clean aesthetics, minimalist design, and unique typography. I am a self-taught developer and my profiences include but are not limited to:  </p>
+                            <table>
                             <tr>
                                 <td>
-                                    HTML
+                                    HTML5
                                 </td>
                                 <td>
-                                    CSS
+                                    CSS3
                                 </td>
                                 <td>
                                     JavaScript
@@ -84,10 +87,12 @@
                                     NodeJS
                                 </td>
                                 <td>
-                                    Angular
+                                    MongoDB
                                 </td>
                              </tr>
                         </table>
+                        <br>
+                         <p>I am an experienced leader and educator, and thrive collaborating with groups to solve complex problems. I am currently working on several freelance web applications, expanding my knowledge and expertise. </p>
                         </div>
                         <div class="col-md-2">
         
@@ -140,29 +145,29 @@
 <div class="container">
     <div class="row">
             <div class="col-md-4 square">
-               <a href="#"><img src="../public/images/ef.png" alt="pic" class="pic"></a>
-                <p>EF Website - HTML, CSS, JS, BOOTSTRAP</p>
+               <a href="www.elenafrankel.com"><img src="../public/images/ef.png" alt="pic" class="pic"></a>
+                <p>Client Web App - HTML5, CSS3, JavaScript, Bootstrap4, NodeJS</p>
             </div>
             <div class="col-md-4 square">
-                <a href="#"><img src="../public/images/BGL_Black.png" alt="pic" class="pic"></a>
-                <p class="hide">BG Website - HTML, CSS, JS, NodeJS, BOOTSTRAP</p>
+                <a href="https://murmuring-thicket-42261.herokuapp.com/"><img src="../public/images/BGL_Black.png" alt="pic" class="pic"></a>
+                <p class="hide">Client Web App - HTML5, CSS3, JavaScript, Bootstrap4, NodeJS</p>
             </div>
             <div class="col-md-4 square">
-                <a href="#"><img src="../public/images/mfart.png" alt="pic" class="pic"></a>
-                <p class="hide">YelpCamp - NodeJS, Express, MongoDB, JS, HTML, CSS, Bootstrap</p>
+                <a href="https://peaceful-fjord-11369.herokuapp.com/contact"><img src="../public/images/mfart.png" alt="pic" class="pic"></a>
+                <p class="hide">Client Web App - HTML5, CSS3, JavaScript, Bootstrap4, NodeJS</p>
             </div>
         
             <div class="col-md-4 square">
-                    <a href="#"><img src="../public/images/pic.jpg" alt="pic" class="pic"></a>
-                    <p class="hide"> MF - H</p>
+                    <a href="moneycaresolutions.com"><img src="../public/images/MoneyCareBlack.png" alt="pic" class="pic"></a>
+                    <p class="hide">Client Web App - HTML5, CSS3, JavaScript, Bootstrap4, NodeJS</p>
              </div> 
              <div class="col-md-4 square">
-                    <a href="#"><img src="../public/images/pic.jpg" alt="pic" class="pic"></a>
-                    <p class="hide">Website - Responsive - HTML, CSS, BOOTSTRAP</p>
+                    <a href="https://stormy-plains-77856.herokuapp.com/"><img src="../public/images/yelpcamp.png" alt="pic" class="pic"></a>
+                    <p class="hide">Personal Project - NodeJS, Express, MongoDB, JavaScript, HTML5, CSS3, Bootstrap4</p>
              </div>         
              <div class="col-md-4 square">
-                    <a href="#"><img src="../public/images/pic.jpg" alt="pic" class="pic"></a>
-                    <p class="hide">Website - Responsive - HTML, CSS, BOOTSTRAP</p>
+                    <a href="#"><img src="../public/images/Todo.png" alt="pic" class="pic"></a>
+                    <p class="hide">Personal Project - HTML5, CSS3, Bootstrap4, NodeJS</p>
              </div>
     </div>
 </div>
@@ -171,7 +176,7 @@
 
         <!-- CONTACT -->
         <div class="container-fluid heading" id="contact">
-              <h1>Contact</h1>
+              <h1>Contact</h1>    
         </div>
 
     <div class="container-fluid contact">
@@ -185,15 +190,16 @@
                     <form action="/contact" method="POST">
                             <div class="form-group">
                             <p>Want to get in touch? Contact me using the form below</p>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+                            <p>{{msg}}</p>
+                                    <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
                                 </div>
                             <div class="form-group">
                             
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
+                                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
                             </div>
                             <div class="form-group">
                               
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="5" placeholder="Message" required></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="form-control" >Submit</button>
@@ -224,13 +230,13 @@
                     <table>
                         <tr>
                             <td>
-                                <a href="#"><i class="fa fa-envelope"></i></a> 
+                                <a href="#contact"><i class="fa fa-envelope"></i></a> 
                             </td>
                             <td>
-                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a target="_blank" href="https://github.com/taradownes"><i class="fa fa-github"></i></a>
                             </td>
                             <td>
-                                 <a href="#"><i class="fa fa-linkedin"></i></a>
+                                 <a target="_blank" href="https://www.linkedin.com/in/tara-downes-154962129/"><i class="fa fa-linkedin"></i></a>
                             </td>
                         </tr>
                     </table>

@@ -27,19 +27,25 @@ ul {
 
 .navbar li {
     padding: 0 4%;
+    cursor: pointer;
+}
+.navbar a{
+    padding: 0;
 }
 
 
 
 /* HEADER */
 
+.top{
+    height: 100vh;
+}
 .header {
     background: url("../../public/images/computer.jpg") fixed 55% 80%;
     background-size: cover;
     height: 100vh;
     min-height: 350px;
     margin: 0;
-    border-top: 1px solid white;
     display: none;
     font-family: "Kodchasan";
     /* font-weight: bold; */
@@ -330,7 +336,7 @@ form p {
     .header .col-sm-12 {
         color: white;
         font-size: 3.5rem;
-        padding: 50vh 0;
+        padding: 40vh 0;
         letter-spacing: 0.7rem;   
         text-align: center;
         font-weight: bold;

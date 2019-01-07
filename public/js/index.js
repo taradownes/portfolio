@@ -74,6 +74,33 @@ $(document).ready(function(){
           $(this.querySelector("p")).slideUp(200);
         });
 
+        $("button").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#about").offset().top},
+                'slow');
+            });
+
+        $(".three").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#portfolio").offset().top},
+                  'slow');
+        });
+        $(".one").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".top").offset().top},
+                  'slow');
+        });
+        $(".four").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#contact").offset().top},
+                  'slow');
+        });
+        $(".two").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#about").offset().top},
+                  'slow');
+        });
+
     });
 
 

@@ -57,20 +57,10 @@ $(document).ready(function(){
 
       $(".square").hover(
         function() {
-          $(this.querySelector("img")).animate({
-                height: "18vh",
-                // margin: "32% auto"
-          }, 200, function(){
 
-          });
           $(this.querySelector("p")).slideDown(200);
         }, function() {
-          $(this.querySelector("img")).animate({
-              height: "20vh",
-            //   margin: "30% auto",
-          }, 200, function(){
-
-          });
+     
           $(this.querySelector("p")).slideUp(200);
         });
 

@@ -107,10 +107,6 @@ table {
 }
 
 
-
-
-
-
 /* PORTFOLIO */
 .portfolio {
     background: white;
@@ -127,12 +123,18 @@ table {
 
 .portfolio .col-md-4 {
     padding: 0 !important;
-
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+}
+.portfolio a{
+    margin: auto;
 }
 .portfolio img {
-    height: 20vh;
+    height: 150px;
     display: block;
-    margin: 30% auto;
+    margin: auto;
 }
 .portfolio p {
     font-weight: bold;
@@ -144,7 +146,6 @@ table {
 }
 
 .square {
-    padding: 25%;
     overflow: hidden;
 }
 
@@ -367,8 +368,6 @@ form p {
     border-radius: 40px;
     padding: 0;
 }
-
-
 .block {
     height: 100%;
 }

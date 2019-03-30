@@ -9,6 +9,12 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+a{
+    outline: none;
+}
+a:active{
+    outline: none;
+}
 
 
 ul {
